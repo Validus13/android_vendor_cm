@@ -138,6 +138,17 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# Prebuilt Apks
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/prebuilt/XposedInstaller.apk:system/app/XposedInstaller.apk \
+    vendor/cm/prebuilt/AppSettings.apk:system/app/AppSettings.apk \
+    vendor/cm/prebuilt/cobalt.apk:system/app/cobalt.apk \
+    vendor/cm/prebuilt/Greenify.apk:system/app/Greenify.apk \
+    vendor/cm/prebuilt/NovaLauncher.apk:system/app/NovaLauncher.apk \
+    vendor/cm/prebuilt/crimson.apk:system/app/crimson.apk \
+    vendor/cm/prebuilt/blue.apk:system/app/blue.apk 
+
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
